@@ -1,0 +1,8 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar wake;
+!slot <callCmd>;
+!slot <contact>;
+!start <callStart>;
+<callStart>:[<callCmd>]<callName>;
+<callCmd>:小迈小迈|你好小迈|小迈你好;
+<callName>:开始训练|结束训练|返回;

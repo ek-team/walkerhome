@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="WaveLoadingView">
+        <attr name="wlv_borderWidth" format="dimension"/>
+        <attr name="wlv_borderColor" format="color"/>
+        <attr name="wlv_progressValue" format="integer"/>
+        <attr name="wlv_shapeType" format="enum">
+            <enum name="triangle" value="0" />
+            <enum name="circle" value="1" />
+            <enum name="square" value="2" />
+            <enum name="rectangle" value="3" />
+        </attr>
+        <attr name="wlv_triangle_direction" format="enum">
+            <enum name="north" value="0" />
+            <enum name="south" value="1" />
+            <enum name="east" value="2" />
+            <enum name="west" value="3" />
+        </attr>
+        <attr name="wlv_round_rectangle" format="boolean"/>
+        <attr name="wlv_round_rectangle_x_and_y" format="integer"/>
+        <attr name="wlv_waveColor" format="color"/>
+        <attr name="wlv_wave_background_Color" format="color"/>
+        <attr name="wlv_waveAmplitude" format="float"/>
+        <attr name="wlv_titleTop" format="string"/>
+        <attr name="wlv_titleCenter" format="string"/>
+        <attr name="wlv_titleBottom" format="string"/>
+        <attr name="wlv_titleTopSize" format="dimension"/>
+        <attr name="wlv_titleCenterSize" format="dimension"/>
+        <attr name="wlv_titleBottomSize" format="dimension"/>
+        <attr name="wlv_titleTopColor" format="color"/>
+        <attr name="wlv_titleCenterColor" format="color"/>
+        <attr name="wlv_titleBottomColor" format="color"/>
+        <attr name="wlv_titleTopStrokeColor" format="color"/>
+        <attr name="wlv_titleTopStrokeWidth" format="dimension"/>
+        <attr name="wlv_titleBottomStrokeColor" format="color"/>
+        <attr name="wlv_titleBottomStrokeWidth" format="dimension"/>
+        <attr name="wlv_titleCenterStrokeColor" format="color"/>
+        <attr name="wlv_titleCenterStrokeWidth" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="BubbleSeekBar">
+        <attr name="bsb_min" format="float|reference"/> <!--min < max, default: 0.0f-->
+        <attr name="bsb_max" format="float|reference"/> <!--min < max, default: 100.0f-->
+        <attr name="bsb_progress" format="float|reference"/> <!--real time progress value, default: min-->
+        <attr name="bsb_is_float_type" format="boolean"/> <!--support for float type-->
+        <attr name="bsb_track_size" format="dimension|reference"/> <!--height of right-track(on the right of thumb), default: 2dp-->
+        <!--height of left-track(on the left of thumb), default: 2dp higher than right-track's height-->
+        <attr name="bsb_second_track_size" format="dimension|reference"/>
+        <attr name="bsb_thumb_radius" format="dimension|reference"/> <!--radius of thumb, default: 2dp higher than left-track's height-->
+        <!--radius of thumb when be dragging, default: 2 times of left-track's height-->
+        <attr name="bsb_thumb_radius_on_dragging" format="dimension|reference"/>
+        <attr name="bsb_track_color" format="color|reference"/> <!--color of right-track, default: R.color.colorPrimary-->
+        <attr name="bsb_second_track_color" format="color|reference"/> <!--color of left-track, default: R.color.colorAccent-->
+        <attr name="bsb_thumb_color" format="color|reference"/> <!--color of thumb, default: same as left-track's color-->
+        <attr name="bsb_section_count" format="integer|reference"/> <!--shares of whole progress(max - min), default: 10-->
+        <attr name="bsb_show_section_mark" format="boolean"/> <!--show demarcation points or not, default: false-->
+        <attr name="bsb_auto_adjust_section_mark" format="boolean"/> <!--auto scroll to the nearest section_mark or not, default: false-->
+        <attr name="bsb_show_section_text" format="boolean"/> <!--show section-text or not, default: false-->
+        <!--渐变色号，用_分割-->
+        <attr name="bsb_colors" format="string"/>
+        <!--是否显示刻度，默认：true-->
+        <attr name="bsb_marks" format="boolean"/>
+        <attr name="bsb_section_text_size" format="dimension|reference"/> <!--text size of section-text, default: 14sp-->
+        <attr name="bsb_section_text_color" format="color|reference"/> <!--text color of section-text, default: same as right-track's color-->
+        <!--text position of section-text relative to track, sides, bottom_sides, below_section_mark, default: sides-->
+        <attr name="bsb_section_text_position">
+            <enum name="sides" value="0"/>
+            <enum name="bottom_sides" value="1"/>
+            <enum name="below_section_mark" value="2"/>
+        </attr>
+        <attr name="bsb_section_text_interval" format="integer"/> <!--the interval of two section-text, default: 1-->
+        <attr name="bsb_show_thumb_text" format="boolean"/> <!--show real time progress-text under thumb or not, default: false-->
+        <attr name="bsb_thumb_text_size" format="dimension|reference"/> <!--text size of progress-text, default: 14sp-->
+        <attr name="bsb_thumb_text_color" format="color|reference"/> <!--text color of progress-text, default: same as left-track's color-->
+        <attr name="bsb_show_progress_in_float" format="boolean"/> <!--show bubble-progress in float or not, default: false-->
+        <attr name="bsb_touch_to_seek" format="boolean"/> <!--touch anywhere on track to quickly seek, default: false-->
+        <attr name="bsb_seek_step_section" format="boolean"/> <!--seek one step by one section, the progress is discrete, default: false-->
+        <attr name="bsb_seek_by_section" format="boolean"/> <!--seek by section, the progress may not be linear, default: false-->
+        <attr name="bsb_bubble_color" format="color|reference"/> <!--color of bubble, default: same as left-track's color-->
+        <attr name="bsb_bubble_text_size" format="dimension|reference"/> <!--text size of bubble-progress, default: 14sp-->
+        <attr name="bsb_bubble_text_color" format="color|reference"/> <!--text color of bubble-progress, default: #ffffffff-->
+        <attr name="bsb_anim_duration" format="integer"/> <!--duration of animation, default: 200ms-->
+        <attr name="bsb_always_show_bubble" format="boolean"/> <!--bubble shows all time, default: false-->
+        <attr name="bsb_always_show_bubble_delay" format="integer"/> <!--the delay duration before bubble shows all the time, default: 200ms-->
+        <attr name="bsb_hide_bubble" format="boolean"/> <!--hide bubble, default: false-->
+        <attr name="bsb_rtl" format="boolean"/> <!--right to left, default: false-->
+        <attr name="android:enabled"/>
+    </declare-styleable>
+    <!--线（进度条）宽度-->
+    <attr name="lineHeight" format="dimension" />
+    <!--字的大小 100元-->
+    <attr name="textSize" format="dimension" />
+    <!--字的颜色 100元-->
+    <attr name="textColor" format="color" />
+    <!--两个游标内部 线（进度条）的颜色-->
+    <attr name="inColor" format="color" />
+    <!--两个游标外部 线（进度条）的颜色-->
+    <attr name="outColor" format="color" />
+    <!--左边图标的图片-->
+    <attr name="imageLow" format="reference"/>
+    <!--右边图标 的图片-->
+    <attr name="imageBig" format="reference"/>
+    <!--游标 图片宽度-->
+    <attr name="imagewidth" format="dimension" />
+    <!--游标 图片高度-->
+    <attr name="imageheight" format="dimension" />
+    <!--是否有刻度线-->
+    <attr name="hasRule" format="boolean" />
+    <!--刻度的颜色-->
+    <attr name="ruleColor" format="color" />
+    <!--刻度上边的字 的颜色-->
+    <attr name="ruleTextColor" format="color" />
+    <!--单位 元-->
+    <attr name="unit" format="string"/>
+    <!--单位份数-->
+    <attr name="equal" format="integer"/>
+    <!--刻度单位 $-->
+    <attr name="ruleUnit" format="string"/>
+    <!--刻度上边文字的size-->
+    <attr name="ruleTextSize" format="dimension" />
+    <!--刻度线的高度-->
+    <attr name="ruleLineHeight" format="dimension" />
+    <!--选择器的最大值-->
+    <attr name="bigValue" format="integer"/>
+    <!--选择器的最小值-->
+    <attr name="smallValue" format="integer"/>
+    <declare-styleable name="DoubleSlideSeekBar">
+        <attr name="lineHeight" />
+        <attr name="textSize" />
+        <attr name="textColor" />
+        <attr name="inColor" />
+        <attr name="outColor" />
+        <attr name="imageLow"/>
+        <attr name="imageBig"/>
+        <attr name="imagewidth" />
+        <attr name="imageheight" />
+        <attr name="hasRule" />
+        <attr name="ruleColor" />
+        <attr name="ruleTextColor" />
+        <attr name="unit" />
+        <attr name="equal" />
+        <attr name="ruleUnit" />
+        <attr name="ruleTextSize" />
+        <attr name="ruleLineHeight" />
+        <attr name="bigValue" />
+        <attr name="smallValue" />
+    </declare-styleable>
+    <declare-styleable name="ElecTimeNumView">
+        <attr name="num" format="enum">
+            <enum name="num0" value="0" />
+            <enum name="num1" value="1" />
+            <enum name="num2" value="2" />
+            <enum name="num3" value="3" />
+            <enum name="num4" value="4" />
+            <enum name="num5" value="5" />
+            <enum name="num6" value="6" />
+            <enum name="num7" value="7" />
+            <enum name="num8" value="8" />
+            <enum name="num9" value="9" />
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg">
+    <include
+        android:id="@+id/layout_center_title"
+        layout="@layout/layout_left_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/tv_ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:padding="20dp"
+            android:textColor="@color/white_88"/>
+        <TextView
+            android:id="@+id/btn_start_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_orange_bg"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="3dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="5dp"
+            android:text="开启监听"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_orange_bg"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="3dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="5dp"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="25sp"
+        android:padding="20dp"
+        android:textColor="@color/white_88"/>
+
+</LinearLayout>

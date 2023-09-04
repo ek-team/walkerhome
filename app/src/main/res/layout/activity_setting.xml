@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg">
+    <include
+        android:id="@+id/layout_center_title"
+        layout="@layout/layout_center_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp" />
+
+    <include
+        android:id="@+id/layout_bottom"
+        layout="@layout/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    <LinearLayout
+        android:id="@+id/layout_system_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_bottom"
+        android:layout_below="@id/layout_center_title"
+        android:layout_marginStart="405dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="许可期限："
+                android:textColor="@color/white_88"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginStart="60dp"
+                android:textColor="@color/white_88"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/btn_activation_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_orange_bg"
+                android:layout_marginStart="60dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="3dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp"
+                android:text="重新激活"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/system_setting_margin_top"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用医院："
+                android:textColor="@color/white_88"
+                android:textSize="24sp" />
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:background="@drawable/btn_frame_orange_bg">
+
+                <EditText
+                    android:id="@+id/et_hospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:maxLines="1"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:hint="@string/hint_edit_hospital_name"
+                    android:inputType="text"
+                    android:background="@color/transparent"
+                    android:textColorHint="@color/white_88"
+                    android:textColor="@color/white_88"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/iv_edit_name"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dip"
+                    android:src="@drawable/ic_edit"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_save_hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/round_orange_bg"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/system_setting_margin_top"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用科室："
+                android:textColor="@color/white_88"
+                android:textSize="24sp" />
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:background="@drawable/btn_frame_orange_bg">
+
+                <EditText
+                    android:id="@+id/et_department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:maxLines="1"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:hint="@string/hint_edit_department_name"
+                    android:inputType="text"
+                    android:background="@color/transparent"
+                    android:textColorHint="@color/white_88"
+                    android:textColor="@color/white_88"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/iv_edit_department"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dip"
+                    android:src="@drawable/ic_edit"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_save_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/round_orange_bg"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/system_setting_margin_top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="语音提示："
+                android:textColor="@color/white_88"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch_voice"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginStart="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/system_setting_margin_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="背景音乐："
+                android:textColor="@color/white_88"
+                android:textSize="24sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_music"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/btn_frame_orange_bg">
+
+                <TextView
+                    android:id="@+id/tv_music"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:text="清风轻拂"
+                    android:textColor="@color/white_88"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="19dp"
+                    android:src="@drawable/ic_down" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/system_setting_margin_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="音&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;量："
+                android:textColor="@color/white_88"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/seekbar_volume"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:max="100"
+                android:maxHeight="3dp"
+                android:minHeight="3dp"
+                android:progressDrawable="@drawable/seekbar_shape_orange" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/system_setting_margin_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="亮度调节："
+                android:textColor="@color/white_88"
+                android:textSize="24sp" />
+
+            <SeekBar
+                android:id="@+id/seekbar_brightness"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:max="100"
+                android:maxHeight="3dp"
+                android:minHeight="3dp"
+                android:progressDrawable="@drawable/seekbar_shape_yellow" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_connect_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/system_setting_margin_top"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备连接："
+                android:textColor="@color/white_88"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_orange_bg"
+                android:layout_marginStart="60dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="3dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp"
+                android:text="同步数据"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/btn_cloud_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_orange_bg"
+                android:layout_marginStart="60dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="3dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp"
+                android:text="云端同步"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/system_setting_margin_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统版本："
+                android:textColor="@color/white_88"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_version_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:textColor="@color/white_88"
+                android:textSize="24sp"
+                tools:text="V0.12" />
+
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:background="@drawable/round_orange_bg"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="检查更新"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_rehabilitation_shoes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_bottom"
+        android:layout_below="@id/layout_center_title"
+        android:layout_marginStart="405dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="康复鞋名称："
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:text="warker" />
+
+            <TextView
+                android:id="@+id/btn_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_orange_bg"
+                android:layout_marginStart="60dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="3dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp"
+                android:text="选择设备"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_orange_bg"
+                android:layout_marginStart="30dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="3dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="5dp"
+                android:text="清零"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="康复鞋蓝牙："
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_connect_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/iv_disconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_warning"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="康复鞋电量："
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_current_battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:text="（请及时充电）" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="康复鞋MAC地址："
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_device_mac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                tools:text="237492749237849" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

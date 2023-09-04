@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tl="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/layout_title_right_header"
+        layout="@layout/layout_title_right_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_white"
+        android:layout_centerVertical="true"
+        android:padding="15dp"
+        android:layout_marginStart="64dp"/>
+
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/tab"
+        android:layout_width="360dp"
+        android:layout_height="48dip"
+        android:layout_toEndOf="@id/iv_back"
+        android:layout_marginStart="40dip"
+        android:layout_centerVertical="true"
+        tl:tl_indicator_anim_enable="true"
+        tl:tl_indicator_bounce_enable="false"
+        tl:tl_indicator_color="@color/colorPrimary"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/white"
+        tl:tl_textUnselectColor="@color/white"
+        tl:tl_textsize="24sp" />
+</RelativeLayout>

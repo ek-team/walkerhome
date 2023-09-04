@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="app_bar_height">120dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="user_edit_text_hint_padding">4dp</dimen>
+    <dimen name="evaluate_table_text_size">32sp</dimen>
+    <dimen name="evaluate_table_record_text_size">30sp</dimen>
+    <dimen name="user_edit_item_margin_top">40dp</dimen>
+    <dimen name="user_edit_item_text_size">30sp</dimen>
+    <dimen name="user_edit_item_select_text_size">24sp</dimen>
+    <dimen name="system_setting_margin_top">30dp</dimen>
+    <dimen name="print_content_text_size">20sp</dimen>
+</resources>

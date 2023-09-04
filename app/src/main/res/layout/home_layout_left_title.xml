@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tl="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_back_white" />
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/img_back"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:text="返回首页"
+        android:textSize="30sp" />
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/tab_home"
+        android:layout_width="600dp"
+        android:layout_height="48dip"
+        android:layout_toEndOf="@id/tv_back"
+        android:layout_marginStart="40dip"
+        android:layout_centerVertical="true"
+        tl:tl_indicator_anim_enable="true"
+        tl:tl_indicator_bounce_enable="false"
+        tl:tl_indicator_color="@color/colorPrimary"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/white"
+        tl:tl_textUnselectColor="@color/white"
+        tl:tl_textsize="24sp"
+        android:visibility="gone"/>
+</RelativeLayout>

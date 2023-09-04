@@ -1,0 +1,8 @@
+#ABNF 1.0 UTF-8;
+language zh-CN; 
+mode voice;
+
+root $main;
+$main = [$call] $name;
+$call = 小迈小迈|你好小迈|小迈你好;
+$name = 开始训练|结束训练|返回;

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg">
+    <include
+        android:id="@+id/layout_center_title"
+        layout="@layout/layout_left_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="40dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编译信息："
+                    android:textColor="@color/white_88"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_version_build_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:textColor="@color/white_88"
+                    android:textSize="24sp"
+                    tools:text="V0.12" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蓝牙设置："
+                    android:textColor="@color/white_88"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/btn_wifi"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_orange_bg"
+                    android:layout_marginStart="60dp"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="初始化蓝牙"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="软件更新："
+                    android:textColor="@color/white_88"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/btn_update_version"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_orange_bg"
+                    android:layout_marginStart="60dp"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="在线更新"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="软件重置："
+                    android:textColor="@color/white_88"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/btn_system_default"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_orange_bg"
+                    android:layout_marginStart="60dp"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="恢复出厂设置"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出厂检验："
+                    android:textColor="@color/white_88"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/btn_check"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_orange_bg"
+                    android:layout_marginStart="60dp"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="生成检验账号"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="蓝牙鞋标定："
+                    android:textColor="@color/white_88"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/btn_start_calibration"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_orange_bg"
+                    android:layout_marginStart="34dp"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="开始标定"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主程序设置："
+                    android:textColor="@color/white_88"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/btn_start_setting"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_orange_bg"
+                    android:layout_marginStart="34dp"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="去设置"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="版本设置："
+                    android:textColor="@color/white_88"
+                    android:textSize="24sp" />
+                <RadioGroup
+                    android:id="@+id/rg_version_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/rg_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        android:paddingStart="10dp"
+                        style="@style/MyCheckBox"
+                        android:text="单机版" />
+                    <RadioButton
+                        android:id="@+id/rg_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        android:paddingStart="10dp"
+                        style="@style/MyCheckBox"
+                        android:text="客户端版" />
+                    <RadioButton
+                        android:id="@+id/rg_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"
+                        android:paddingStart="10dp"
+                        style="@style/MyCheckBox"
+                        android:text="家庭版" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_calibration"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_ble_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:layout_marginEnd="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="当前值:"
+                    android:textSize="30sp"/>
+                <TextView
+                    android:id="@+id/tv_value"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginStart="30dp"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_orange_bg"
+                    android:visibility="visible"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="第一步：请把蓝牙鞋保持图示状态进行清零"
+                android:textSize="30sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:src="@mipmap/pic_first_calibration"/>
+
+                <TextView
+                    android:id="@+id/btn_clear_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_orange_bg"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginStart="20dp"
+                    android:text="清零"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:text="第二步：请把固定重量的砝码按图示放入蓝牙鞋进行标定"
+                android:textSize="30sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:src="@mipmap/pic_calibration_second"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/ed_remote_calibration"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:textSize="25sp"
+                            android:inputType="number"
+                            android:theme="@style/EditTextStyle"
+                            android:hint="标定值"
+                            android:textColorHint="@color/white_65"
+                            android:visibility="visible"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="kg"
+                            android:textSize="30sp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/btn_calibration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_orange_bg"
+                        android:layout_marginStart="30dp"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="标定"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

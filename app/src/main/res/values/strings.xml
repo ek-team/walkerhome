@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_id">5f6d7c53</string>
+    <string name="app_name">法智迈</string>
+    <string name="ble_connecting">正在连接中请稍等</string>
+    <string name="ble_haven_connected">蓝牙鞋已经连接</string>
+    <string name="ble_disconnect">蓝牙鞋断开</string>
+    <string name="cancel">取消</string>
+    <string name="hint_account">请输入用户名</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="hint_confirm_password">请确认密码（选填）</string>
+    <string name="hint_full_name">请输入姓名（必填）</string>
+    <string name="hint_age">请输入年龄（必填）</string>
+    <string name="hint_weight">请输入体重（必填）(kg)</string>
+    <string name="previous">上一步</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="plan_and_record">计划与记录</string>
+    <string name="personal_info">个人信息</string>
+    <string name="about_us">关于我们</string>
+    <string name="system_message">系统消息</string>
+    <string name="exit_login">退出登录</string>
+    <string name="rehabilitation_shoes">康复鞋</string>
+    <string name="system_setting">系统设置</string>
+    <string name="propaganda">宣传</string>
+    <string name="health">健康</string>
+    <string name="use">使用</string>
+    <string name="chart">咨询</string>
+    <string name="doctor_info">医生信息</string>
+    <string name="push_plan">推送计划</string>
+    <string name="expertise_areas">擅长领域</string>
+    <string name="main_experience">主要经历</string>
+    <string name="push_doctor">推送医生</string>
+    <string name="time">时间</string>
+    <string name="rehabilitation_plan_name">康复计划名称</string>
+    <string name="info">信息</string>
+    <string name="record">记录</string>
+    <string name="plan">计划</string>
+    <string name="recycle">回收</string>
+    <string name="news">资讯</string>
+    <string name="system">系统</string>
+    <string name="ble_shoes_setting">训练鞋</string>
+    <string name="evaluate">评估</string>
+    <string name="get_source_long">得&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;分</string>
+    <string name="accuracy_rate">准&#160;&#160;确&#160;&#160;率</string>
+    <string name="complete_rate">完&#160;&#160;成&#160;&#160;率</string>
+    <string name="commit">提交</string>
+    <string name="commit_save">提交保存</string>
+    <string name="next">下一步</string>
+    <string name="start">开始啦</string>
+    <string name="chat">咨询</string>
+    <string name="company_name">&#169;法罗适(上海)医疗技术有限公司</string>
+    <string name="text_feedback_tips">以上选项重要程度由重到轻，请依据自身实际情况选择不良反应反馈</string>
+
+    <string name="confirm">确定</string>
+    <string name="know">知道了</string>
+    <string name="tip">提示</string>
+    <string name="feedback_tip">如您多次在训练中患处发生异响，或同时伴有肿胀、出血等问题，请您暂停训练并及时联系您的主治医生咨询</string>
+    <string name="feedback_tip_1">以上选项重要程度由重到轻，请依据自身实际情况选择不良反应反馈</string>
+    <string name="text_evaluate_tips">请踩踏到你感觉到轻微疼痛，然后放松，进行三次评估</string>
+    <string name="start_train">开始训练</string>
+
+    <string name="s_UserName">姓名:</string>
+    <string name="s_Age">年龄:</string>
+    <string name="s_CaseHistoryNO">病历号:</string>
+    <string name="s_Man">男</string>
+    <string name="s_Womnan">女</string>
+    <string name="s_Sex">性别:</string>
+    <string name="s_UserDate">手术日期:</string>
+    <string name="s_BedNo">主治医生:</string>
+    <string name="s_weight">体重:</string>
+    <string name="s_Linkman">联系人:</string>
+    <string name="s_Phone">手机:</string>
+    <string name="s_Tel">座机:</string>
+    <string name="s_Diag">诊断结果:</string>
+    <string name="title_activity_admin2">用户信息管理</string>
+    <string name="s_must_star">*请注意，星号必填项:</string>
+    <string name="btn_save">保存</string>
+    `<string name="btn_return">返回</string>
+    <string name="char_must">*</string>
+    <string name="L_0">关节置换</string>
+    <string name="L_1">骨折</string>
+    <string name="L_2">软组织损伤</string>
+    <string name="L_3">3级</string>
+    <string name="L_4">4级</string>
+    <string name="L_5">其他</string>
+    <string name="hint_edit_phone">请输入手机号</string>
+    <string name="hint_edit_name">请输入姓名</string>
+    <string name="hint_edit_bed_number">请输入主治医生</string>
+    <string name="hint_edit_weight">0</string>
+    <string name="hint_edit_case_number">请输入病历号（必填）</string>
+    <string name="hint_edit_be_hospitalized_date">请选择手术日期</string>
+    <string name="hint_edit_hospital_name">请输入使用医院</string>
+    <string name="hint_edit_department_name">请输入使用科室</string>
+    <array name="music_list">
+        <item>卡农</item>
+        <item>秋日的私语</item>
+        <item>瞬间的永恒</item>
+        <item>夜空的寂静</item>
+        <item>雨的印记</item>
+        <item>月半小夜曲</item>
+        <item>无音乐</item>
+    </array>
+    <array name="diagnostic_result_list">
+        <item>请选择（必填）</item>
+        <item>全髋关节置换</item>
+        <item>全膝关节置换</item>
+        <item>股骨颈骨折</item>
+        <item>股骨转子间骨折</item>
+        <item>胫骨平台骨折（钢板固定）</item>
+        <item>胫骨平台骨折（钢板内固定）</item>
+        <item>胫骨中段骨折（石膏固定）</item>
+        <item>胫骨中段骨折（髓内钉）</item>
+        <item>胫骨中段骨折（桥接钢板）</item>
+        <item>胫骨远端骨折</item>
+        <item>踝关节骨折（钢板内固定）</item>
+        <item>跟骨骨折（钢板固定）</item>
+        <item>踝关节韧带损伤（踝关节韧带重建术）</item>
+        <item>股骨头坏死（腓骨移植术）</item>
+        <item>其他</item>
+    </array>
+    <array name="algorithm_select_list">
+        <item>选择评估算法</item>
+        <item>稳健</item>
+        <item>激进</item>
+    </array>
+
+    <string name="voice_text_function_on">语音功能已开启</string>
+    <string name="voice_text_function_off">语音功能已关闭</string>
+
+
+    <string name="login_long">登&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;录</string>
+    <string name="register_long">注&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;册</string>
+    <string name="edit_long">编&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;辑</string>
+    <string name="login_short">登&#160;&#160;&#160;&#160;录</string>
+    <string name="confirm_short">确&#160;&#160;&#160;&#160;认</string>
+    <string name="confirm_skip">跳&#160;&#160;&#160;&#160;过</string>
+    <string name="activate_confirm">激&#160;&#160;&#160;&#160;活</string>
+    <string name="finish_short">完&#160;&#160;&#160;&#160;成</string>
+    <string name="txt_company_info"><![CDATA[    法罗适（上海）医疗技术有限公司坐落于中国大陆的经济、金融、贸易和航运中心——上海，是由在医药销售行业沉淀二十多年的集团性公司转型延续而来，是一家在医疗产品领域集研发、生产、销售于一体的现代化高新技术企业。整合资源、积极引进、转化国际国内最新医疗技术，致力于做中国2025智造强国。     公司依托具有20年医药产品、医疗器械销售经验的专业团队，以大健康领域创新科研成果为导向，关注创新技术项目，关注社会健康需求。在国家鼓励创新型医疗器械研发的背景下，我们立志转型升级，新生儿脐带消毒液、孕妇低频止吐仪、一次性使用密闭式湿化鼻氧管等专利项目成功上市，填补了国内该领域的市场空白，为法罗适医疗新形势下的强劲发展奠定了坚实基础。     公司秉承“用工匠精神、做中国创造”的企业理念，以高起点、高标准为行业带来活力，以更加成熟和稳健的步伐，担负起对广大用户和社会的责任，与用户共成长同进步，为社会的健康事业做出卓越的贡献。公司建立了开放、规范、先进的经营管理体系，高素质的专业人才、先进的管理理念、严格的质量体系、健全的销售网络，全面提高自身整体竞争力，并不断加速“法罗适”的国际化进程，势必建设起信誉天下的“法罗适”品牌。]]></string>
+    <string name="txt_company_bottom_info"><![CDATA[法罗适（上海）医疗技术有限公司        TEL :4009001022         办公地址 : 上海市闵行区剑川路930号C栋一层]]></string>
+    <string name="str_title_newdev">未配对</string>
+    <string name="str_title_pairedev">已配对</string>
+    <string name="bluetooth_device_list">蓝牙设备列表</string>
+    <string name="select_bluetooth_device">选择蓝牙设备</string>
+    <string name="none_bluetooth_device_found">没有找到蓝牙设备</string>
+    <string name="none_paired">没有已配对设备</string>
+    <string name ="bluetooth_is_not_enabled">蓝牙没有开启</string>
+    <string name="bluetooth_is_close">蓝牙关闭</string>
+    <string name="scaning">扫描</string>
+    <string name="txt_record_statement">声明：本次评估结果只供参考，请以医生的评估为准。</string>
+</resources>

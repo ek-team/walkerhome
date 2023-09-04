@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg">
+    <include
+        android:id="@+id/home_left"
+        layout="@layout/home_layout_left_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+    <include
+        android:id="@+id/layout_training_title"
+        layout="@layout/layout_training_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home_left">
+
+        <ImageView
+            android:id="@+id/iv_machine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_machine" />
+
+        <TextView
+            android:id="@+id/tv_warning_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:layout_toLeftOf="@id/iv_machine"
+            android:text="请握好扶手"
+            android:textColor="#BBFFFFFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_warning_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:layout_toRightOf="@id/iv_machine"
+            android:text="请握好扶手"
+            android:textColor="#BBFFFFFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_start_bg"
+            android:gravity="center"
+            android:text="开  始"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+    </RelativeLayout>
+</RelativeLayout>

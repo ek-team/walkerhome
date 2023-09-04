@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg">
+    <include
+        android:id="@+id/layout_center_title"
+        layout="@layout/layout_center_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp" />
+    <LinearLayout
+        android:id="@+id/ll_wx"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫描二维码同步微信用户信息"
+                android:textColor="@color/white"
+                android:layout_marginBottom="30dp"
+                android:textSize="25sp"/>
+            <ImageView
+                android:id="@+id/img_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_doctor_info"
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="95dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="许娟"
+                android:textSize="28sp"/>
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:textColor="@color/white_88"
+                tools:text="女        45岁"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:textColor="@color/white_88"
+                tools:text="主任医师        教授"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/tv_work_years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white_88"
+                tools:text="从医：15年"
+                android:textSize="22sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_line"/>
+
+            <TextView
+                android:id="@+id/tv_hospital_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                tools:text="浙江大学附属第一医院"
+                android:textColor="@color/white_88"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/tv_hospital_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="0815-888888888"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/white_88"
+                android:textSize="22sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
